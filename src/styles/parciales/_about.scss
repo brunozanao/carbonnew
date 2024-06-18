@@ -1,0 +1,236 @@
+#about {
+    background-color: #111;
+    padding: 150px 0;
+    position: relative;
+
+    
+}
+.about__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 150px;
+
+    &-img {
+        width: 50%;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 13px;
+            position: relative;
+            z-index: 3;
+            box-shadow: 0px 0px 50px rgb(0 0 0 / 60%);
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #353535;
+            left: 0;
+            top: 0;
+            transform: rotate(5deg);
+        }
+    }
+
+    &-content {
+        width: 50%;
+        padding: 40px 40px 40px 100px;
+
+        &-title {
+            margin-bottom: 31px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h3 {
+                margin: 0;
+                padding: 0;
+                font-size: 36px;
+                margin-bottom: 6px;
+            }
+
+            &[data-aling="left"] {
+                align-items: flex-start;
+            }
+
+            &-line {
+                position: relative;
+                width: 140px;
+                height: 10px;
+
+                div {
+                    width: 140px;
+                    display: block;
+                    height: 2px;
+                    background-color: #666;
+                    position: absolute;
+                    top: 4px;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        z-index: 3;
+                        margin-top: -3px;
+                        height: 6px;
+                        top: 50%;
+                        left: 14px;
+                        right: auto;
+                        margin-right: 0;
+                        width: 2px;
+                        background-color: #666;
+                    }
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 26px;
+                        right: auto;
+                        margin-left: 0;
+                        margin-top: -2px;
+                        height: 4px;
+                        width: 2px;
+                        background-color: #666;
+                        z-index: 3;
+                        top: 50%;
+                    }
+                }
+
+                &::after {
+                    
+                    content: '';
+                    position: absolute;
+                    width: 4px;
+                    height: 10px;
+                    left: 0;
+                    margin-left: 0;
+                    background-color: #666;
+                    border-radius: 10px;
+                }
+            }
+        }
+        &-text {
+            margin-bottom: 37px;
+
+            p {
+                margin-bottom: 27px;
+            }
+            & p:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &-btn {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            &-link {
+                margin: 5px 20px 5px 0;
+                display: block;
+                width: fit-content;
+                max-width: 100%;
+                text-decoration: none;
+                color: #ccc;
+                font-size: 16px;
+                text-transform: uppercase;
+                font-family: 'Heebo', sans-serif;
+                border: 2px solid #666;
+                border-radius: 5px;
+                line-height: 46px;
+                padding: 0 20px 0 73px;
+                position: relative;
+                text-align: center;
+                letter-spacing: .5px;
+                
+                &-icon {
+                    display: block;
+                    position: absolute;
+                    left: 14px;
+                    top: 50%;
+                    margin-top: -11px;
+
+                    &::before {
+                        content: '';
+                        width: 2px;
+                        height: 0;
+                        background-color: #78f701;
+                        left: 100%;
+                        margin-left: 14px;
+                        top: -2px;
+                        position: absolute;
+                        z-index: 3;
+                        transition: all .3s ease;
+                    }
+
+                    &::after {
+                        content: '';
+                        width: 2px;
+                        height: 26px;
+                        background-color: #666;
+                        left: 100%;
+                        margin-left: 14px;
+                        top: 50%;
+                        margin-top: -13px;
+                        position: absolute;
+                    }
+
+                    &-svg {
+                        width: 22px;
+                        height: 22px;
+                        display: block;
+                        opacity: 1;
+                        fill: currentcolor;
+
+                        &::after {
+                            content: '';
+                            width: 2px;
+                            height: 26px;
+                            background-color: #666;
+                            left: 100%;
+                            margin-left: 14px;
+                            top: 50%;
+                            margin-top: -13px;
+                            position: absolute;
+                        }
+                    }
+                }
+                
+
+                &:hover  {
+                    border-color: #78f701;
+                    color: #eee;
+                }
+                &:hover &-icon::before {
+                    height: 26px;
+                }
+                &:hover &-icon::after {
+                    opacity: 0;
+                }
+                
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.only-text {
+    padding: 0 28px;
+}
+
+.about__item.reverse .about__item-content {
+    padding: 40px 140px 40px 0px;
+}

@@ -1,0 +1,71 @@
+.scroll {
+    position: absolute;
+    bottom: 24px;
+    z-index: 15;
+    text-decoration: none;
+    color: #eee;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Heebo', sans-serif;
+    letter-spacing: 1px;
+    padding-top: 60px;
+    
+    &__icon {
+        position: absolute;
+        display: block;
+        top: -16px;
+        left: 50%;
+        width: 18px;
+        height: 40px;
+        color: #aaa;
+        margin-left: -9px;
+        animation: bottomArrow 1.5s infinite;
+        transition: all .3s ease;
+
+        .icon-svg {
+            position: absolute;
+            display: block;
+            bottom: -4px;
+            transform: rotate(90deg);
+            left: 50%;
+            margin-left: -9px;
+            z-index: 3;
+            fill: currentcolor;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 40px;
+            background-color: #aaa;
+            left: 50%;
+            margin-left: -1px;
+            transition: all .3s ease;
+        }
+    }
+    &:hover {
+        color: #78f701;
+        
+        .scroll__icon {
+            color: #78f701;
+        }
+
+        .scroll__icon::after {
+            background-color: #78f701;
+        }
+    }
+}
+
+@keyframes bottomArrow {
+	0% {
+		transform: translate(0, 0);
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		transform: translate(0px, 20px);
+		opacity: 0;
+	}
+}

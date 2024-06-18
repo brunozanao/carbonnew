@@ -1,0 +1,52 @@
+@import "~bootstrap/scss/bootstrap";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #111;
+    color: #ccc;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 1.44;
+    font-weight: 400;
+    position: relative;
+    word-break: break-word;
+}
+ul {
+    margin-bottom: 0;
+    padding-left: 0;
+    li {
+    list-style: none;
+    }
+}
+a {
+    text-decoration: none;
+    color: #ccc;
+    transition: all .3s ease;
+}
+p {
+    margin-bottom: 0;
+}
+h3 {
+    margin-bottom: 0;
+    color: #fff;
+}
+.box-container {
+    width: 100%;
+    max-width: 1360px;
+    padding: 0 80px;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: 'neon';
+    src: url(../../font/NEON____.TTF);
+}
+@import "./parciales/header";
+@import "./parciales/icon-scroll";
+@import "./parciales/main";
+@import "./parciales/about";
+@import "./parciales/media-queries";
