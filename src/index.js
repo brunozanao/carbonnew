@@ -43,7 +43,7 @@ const Index = () => {
           </a>
         </div>
       </div>
-      {/* !Hero Header */}
+      !Hero Header
       {/* About Section */}
       <AboutComponent />
       {/* !About Section */}
