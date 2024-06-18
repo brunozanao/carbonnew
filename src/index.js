@@ -1,62 +1,33 @@
-import Layout from "@/layout/Layout";
-import AboutComponent from "@components/AboutComponent";
-import BlogComponent from "@components/BlogComponent";
-import Drops from "@components/Drops";
-import ServicesComponent from "@components/ServicesComponent";
-import WhyChooseUsComponent from "@components/WhyChooseUsComponent";
-
-const Index = () => {
-  return (
-    <Layout pageName={"Home Static"}>
-      {/* Hero Header */}
-      <div className="neoh_fn_hero">
-        {/* Overlay (of hero header) */}
-        <div className="bg_overlay">
-          {/* Overlay Color */}
-          <div className="bg_color" />
-          {/* !Overlay Color */}
-          {/* Overlay Image */}
-          <div className="bg_image" data-bg-img="img/hero/bg.jpg" />
-          {/* !Overlay Image */}
-        </div>
-        {/* Overlay (of hero header) */}
-        <div className="hero_content">
-          <div className="container">
-            <div className="content">
-              <h2 className="fn_title" title="Neoh">
-                Neoh
-              </h2>
-              <p className="fn_desc fn_animated_text">
-                The collection built by and runby codeefly. Together we are
-                strong than ever.
-              </p>
-            </div>
-          </div>
-          <a
-            href="#about"
-            className="neoh_fn_down magic-hover magic-hover__square"
-          >
-            <span className="text">Scroll Down</span>
-            <span className="icon">
-              <img src="svg/right-arr.svg" alt="" className="fn__svg" />
-            </span>
-          </a>
-        </div>
-      </div>
-      !Hero Header
-      {/* About Section */}
-      <AboutComponent />
-      {/* !About Section */}
-      {/* Services Section */}
-      <ServicesComponent />
-      {/* !Services Section */}
-      <Drops />
-      {/* Investor Section */}
-      <WhyChooseUsComponent />
-      {/* !Investor Section */}
-      {/* Blog Section */}
-      <BlogComponent />
-    </Layout>
-  );
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import "./styles/style.scss";
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+const firebaseConfig = {
+  apiKey: "AIzaSyBnMxYjiqLkjgT4s7ZIpVMSs3rI21z8cb0",
+  authDomain: "neoh-16431.firebaseapp.com",
+  projectId: "neoh-16431",
+  storageBucket: "neoh-16431.appspot.com",
+  messagingSenderId: "237879653852",
+  appId: "1:237879653852:web:c62effcbf50c8285db4b19",
+  measurementId: "G-99Q298EL4M"
 };
-export default Index;
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
