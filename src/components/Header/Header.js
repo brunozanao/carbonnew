@@ -27,7 +27,7 @@ export default function Header() {
             <section className='box-container'>
                 <div className='header__container'>
                     <div className='header__container-logo'>
-                        <img src="https://firebasestorage.googleapis.com/v0/b/neoh-16431.appspot.com/o/assets%2Flogo.png?alt=media&token=58245d43-1613-4a38-a59f-4608a2af2683" alt="logo" />
+                        <img src="%PUBLIC_URL%/Carbon_white_logo.png" alt="logo" />
                     </div>
                     <div onClick={handleClick} className={`header__container-menu ${setClass(defuse ,'active')}`}>
                         <div className='trigger'>
