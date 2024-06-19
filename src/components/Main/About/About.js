@@ -47,7 +47,7 @@ export default function About () {
                             </div>
                             <p class="about__item-content-btn-text">OpenSea</p>
                         </a>
-                        <a href="https://discord.com/" target="_blank" className='about__item-content-btn-link'>
+                        <a href="https://discord.gg/sDMzchFsmp" target="_blank" className='about__item-content-btn-link'>
                             <div class="about__item-content-btn-link-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="512.000000pt" height="392.000000pt" viewBox="0 0 512.000000 392.000000" preserveAspectRatio="xMidYMid meet" class="about__item-content-btn-link-icon-svg">
                                 <g transform="translate(0.000000,392.000000) scale(0.100000,-0.100000)" stroke="none">
