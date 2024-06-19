@@ -9,7 +9,7 @@ export default function Hero () {
         <div className="hero">
             <div className="box-container">
                 <div className="hero__content">
-                    <h2 className="hero__content-title" title="Neoh">Carbon</h2>
+                    <h2 className="hero__content-title" title="Neoh">𝗦𝘂𝘀𝘁𝗮𝗶𝗻𝗮𝗯𝗶𝗹𝗶𝘁𝘆 𝗕𝗼𝗻𝗱𝘀 + 𝗡𝗙𝗧 = 𝗥𝗲𝗙𝗶</h2>
                     <p className="hero__content-text ready">
                         <span style={{animationDelay: "0s"}}>T</span>
                         <span style={{animationDelay: "0.04s"}}>h</span>
