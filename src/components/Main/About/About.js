@@ -63,7 +63,7 @@ export default function About () {
 
             <div className='about__item reverse'>
                 <div className='about__item-img'>
-                    <img src='https://firebasestorage.googleapis.com/v0/b/neoh-16431.appspot.com/o/assets%2F2.jpg?alt=media&token=d6419fdb-ec22-4b19-8843-fcbcafaa35e4' />
+                    <img src='/carbon3.jpg' />
                 </div>
                 <div className='about__item-content'>
                     <div className='about__item-content-title' data-aling='left'>
