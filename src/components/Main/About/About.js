@@ -3,7 +3,7 @@ export default function About () {
         <div className='box-container'>
             <div className='about__item'>
                 <div className='about__item-img'>
-                    <img src='%PUBLIC_URL%/carbon2.jpg' />
+                    <img src='/carbon2.jpg' />
                 </div>
                 <div className='about__item-content'>
                     <div className='about__item-content-title' data-aling='left'>
