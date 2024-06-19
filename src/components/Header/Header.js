@@ -65,7 +65,7 @@ export default function Header() {
                                 <li className={`menu-item ${setClass(defuse, 'animated')}`}><a href="#">Manifest</a></li>
                                 <li className={`menu-item ${setClass(defuse, 'animated')}`}><a href="#">Our Team</a></li>
                                 <li className={`menu-item ${setClass(defuse, 'animated')}`}><a href="#">Our Carbon</a></li>
-                                <li className={`menu-item ${setClass(defuse, 'animated')}`}><a href="#">Whitepaper</a></li>
+                                <li className={`menu-item ${setClass(defuse, 'animated')}`}><a href="https://carbonstd.gitbook.io/whitepaper/" target="_blank">Whitepaper</a></li>
                                 <li className={`menu-item ${setClass(defuse, 'animated')}`}><a href="#">Roadmap</a></li>
                                 <li className={`menu-item ${setClass(defuse, 'animated')}`}><a href="#">Governance</a></li>
                                 <li className={`menu-item ${setClass(defuse, 'animated')}`}><a href="#">Whitelist</a></li>
