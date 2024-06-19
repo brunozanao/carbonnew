@@ -27,7 +27,7 @@ export default function Header() {
             <section className='box-container'>
                 <div className='header__container'>
                     <div className='header__container-logo'>
-                        <img src=".../public/Carbon_white_logo.png" alt="logo" />
+                        <img src="public/carbon" alt="logo" />
                     </div>
                     <div onClick={handleClick} className={`header__container-menu ${setClass(defuse ,'active')}`}>
                         <div className='trigger'>
