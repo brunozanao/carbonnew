@@ -9,9 +9,9 @@ export default function Hero () {
         <div className="hero">
             <div className="box-container">
                 <div className="hero__content">
-                    <h2 className="hero__content-title" title="Neoh">Carbon.std</h2>
+                    <h2 className="hero__content-title" title="Neoh">Carbon</h2>
                     <p className="hero__content-text ready">
-                        <span style={{animationDelay: "0s"}}>t</span>
+                        <span style={{animationDelay: "0s"}}>T</span>
                         <span style={{animationDelay: "0.04s"}}>h</span>
                         <span style={{animationDelay: "0.08s"}}>e</span>
                         <span style={{animationDelay: "0.12s"}}> </span>
@@ -21,6 +21,7 @@ export default function Hero () {
                         <span style={{animationDelay: "0.28s"}}>u</span>
                         <span style={{animationDelay: "0.32s"}}>r</span>
                         <span style={{animationDelay: "0.36s"}}>e</span>
+                        <span style={{animationDelay: "0.12s"}}> </span>
                         <span style={{animationDelay: "0.4s"}}>i</span>
                         <span style={{animationDelay: "0.44s"}}>s</span>
                         <span style={{animationDelay: "0.12s"}}> </span>
@@ -50,7 +51,7 @@ export default function Hero () {
                         <span style={{animationDelay: "1.28s"}}>n</span>
                         <span style={{animationDelay: "1.32s"}}>d</span>
                         <span style={{animationDelay: "0.12s"}}> </span>
-                        <span style={{animationDelay: "1.36s"}}>T</span>
+                        <span style={{animationDelay: "1.36s"}}>t</span>
                         <span style={{animationDelay: "1.4s"}}>h</span>
                         <span style={{animationDelay: "1.44s"}}>e</span>
                         <span style={{animationDelay: "1.48s"}}> </span>
