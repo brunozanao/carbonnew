@@ -62,10 +62,16 @@ export default function Header() {
                                 <li className={`menu-item ${setClass(defuse, 'animated')}`}>
                                     <a  href="#">Home</a>
                                 </li>
-                                <li className={`menu-item ${setClass(defuse, 'animated')}`}><a href="about.html">About</a></li>
-                                <li className={`menu-item ${setClass(defuse, 'animated')}`}><a href="collection.html">Collection</a></li>
-                                <li className={`menu-item ${setClass(defuse, 'animated')}`}><a href="blog.html">Blog</a></li>
-                                <li className={`menu-item ${setClass(defuse, 'animated')}`}><a href="contact.html">Contact</a></li>
+                                <li className={`menu-item ${setClass(defuse, 'animated')}`}><a href="#">Manifest</a></li>
+                                <li className={`menu-item ${setClass(defuse, 'animated')}`}><a href="#">Our Team</a></li>
+                                <li className={`menu-item ${setClass(defuse, 'animated')}`}><a href="#">Our Carbon</a></li>
+                                <li className={`menu-item ${setClass(defuse, 'animated')}`}><a href="#">Whitepaper</a></li>
+                                <li className={`menu-item ${setClass(defuse, 'animated')}`}><a href="#">Roadmap</a></li>
+                                <li className={`menu-item ${setClass(defuse, 'animated')}`}><a href="#">Governance</a></li>
+                                <li className={`menu-item ${setClass(defuse, 'animated')}`}><a href="#">Whitelist</a></li>
+                                <li className={`menu-item ${setClass(defuse, 'animated')}`}><a href="#">Treasury Vault</a></li>
+                                <li className={`menu-item ${setClass(defuse, 'animated')}`}><a href="#">DAO Plataform</a></li>
+                                <li className={`menu-item ${setClass(defuse, 'animated')}`}><a href="#">Legal Documents</a></li>
                             </ul>
                         </div>
                     </div>
